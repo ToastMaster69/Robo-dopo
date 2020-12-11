@@ -11,7 +11,7 @@ public class CrazySonOfABitch extends AdvancedRobot {
 	boolean movingForward;
 
 	/**
-	 * run: Crazy's main run function
+	 * run: main run function
 	 */
 	public void run() {
 		// Set colors

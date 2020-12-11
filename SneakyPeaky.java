@@ -23,8 +23,9 @@ public class SneakyPeaky extends JuniorRobot
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
 			turnGunRight(360);
-			back(100);
+			turnBodyLeft(90);
 			turnGunRight(360);
+			turnBodyRight(150);
 		}
 	}
 
@@ -33,7 +34,7 @@ public class SneakyPeaky extends JuniorRobot
 	 */
 	public void onScannedRobot() {
 		// Replace the next line with any behavior you would like
-		fire(1);
+		fire(2);
 	}
 
 	/**
@@ -42,6 +43,7 @@ public class SneakyPeaky extends JuniorRobot
 	public void onHitByBullet() {
 		// Replace the next line with any behavior you would like
 		back(10);
+		fire(1)
 	}
 	
 	/**
@@ -50,5 +52,6 @@ public class SneakyPeaky extends JuniorRobot
 	public void onHitWall() {
 		// Replace the next line with any behavior you would like
 		back(20);
+		turnBodyRight(90);
 	}	
 }
